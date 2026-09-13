@@ -72,9 +72,9 @@ export function Skills() {
                           {skill.description}
                         </p>
                         {skill.level ? (
-                          <Badge className="mt-4 w-fit self-start">{skill.level}</Badge>
+                          <Badge className="mt-auto w-fit self-start pt-1.5">{skill.level}</Badge>
                         ) : (
-                          <span className="mt-4" />
+                          <span className="mt-auto" />
                         )}
                       </article>
                     </Reveal>
