@@ -13,7 +13,9 @@ export function About() {
 
   return (
     <section id="about" className="scroll-mt-24 border-t border-border bg-surface/40 py-20 md:py-28">
-      <div className="container-page grid gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16">
+      <div className="container-page grid gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:items-start lg:gap-16">
+        <ProfileCard />
+
         <div>
           <SectionHeading eyebrow="About" title="Turning Curiosity Into" highlight="Code." />
           <div className="mt-7 space-y-5">
