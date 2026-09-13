@@ -241,28 +241,29 @@
 /* Scroll reveal — starts hidden, .is-visible added by observer */
 @utility reveal {
   opacity: 0;
-  transform: translateY(24px);
+  transform: translate3d(0, 14px, 0);
   transition:
-    opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
-    transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
-  will-change: opacity, transform;
+    opacity 0.5s ease-out,
+    transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+  /* no will-change: promoted layers can ghost text mid-scroll */
+  backface-visibility: hidden;
 
   &.is-visible {
     opacity: 1;
-    transform: none;
+    transform: translate3d(0, 0, 0);
   }
 }
 
 @utility card-hover {
   transition:
-    transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
-    border-color 0.35s ease,
-    box-shadow 0.35s ease;
+    transform 0.3s cubic-bezier(0.22, 1, 0.36, 1),
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
 
   &:hover {
-    transform: translateY(-6px);
+    transform: translate3d(0, -4px, 0);
     border-color: var(--color-border-strong);
-    box-shadow: var(--glow-accent);
+    box-shadow: var(--shadow-card);
   }
 }
 
