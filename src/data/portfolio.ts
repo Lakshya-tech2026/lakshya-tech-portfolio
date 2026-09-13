@@ -36,6 +36,20 @@ export const personal = {
   },
 };
 
+// ── PROFILE PHOTO CARD (About section) ───────────────────────
+// Drop your portrait in src/assets, then import it here.
+// Recommended: a 4:5 portrait crop with you centered.
+export const profile = {
+  /** Set to your imported image URL. Empty string shows a placeholder frame. */
+  photo: "",
+  photoAlt: "Portrait of Lakshya Chandra",
+  name: "Lakshya Chandra",
+  role: "Aspiring AI/ML Engineer",
+  degree: "B.Tech CSE (AI/ML)",
+  institute: "PW Institute of Innovation",
+  keywords: ["AI/ML", "Python", "Java", "Generative AI"],
+};
+
 // ── SOCIAL / CONTACT LINKS (edit these) ──────────────────────
 export const links = {
   github: "https://github.com/Lakshya-tech2026",

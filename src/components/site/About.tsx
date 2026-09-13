@@ -1,6 +1,7 @@
 import { GraduationCap, Building2, Target, Activity } from "lucide-react";
 import { personal } from "@/data/portfolio";
 import { Reveal, SectionHeading } from "./primitives";
+import { ProfileCard } from "./ProfileCard";
 
 export function About() {
   const info = [
@@ -12,7 +13,9 @@ export function About() {
 
   return (
     <section id="about" className="scroll-mt-24 border-t border-border bg-surface/40 py-20 md:py-28">
-      <div className="container-page grid gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16">
+      <div className="container-page grid gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:items-start lg:gap-16">
+        <ProfileCard />
+
         <div>
           <SectionHeading eyebrow="About" title="Turning Curiosity Into" highlight="Code." />
           <div className="mt-7 space-y-5">
@@ -22,10 +25,9 @@ export function About() {
               </Reveal>
             ))}
           </div>
-        </div>
 
-        <Reveal delay={120}>
-          <ul className="panel space-y-1 p-5 sm:p-6">
+          <Reveal delay={120} className="mt-10">
+            <ul className="panel grid gap-1 p-5 sm:grid-cols-2 sm:p-6">
             {info.map(({ label, value, Icon }) => (
               <li
                 key={label}
@@ -42,8 +44,9 @@ export function About() {
                 </span>
               </li>
             ))}
-          </ul>
-        </Reveal>
+            </ul>
+          </Reveal>
+        </div>
       </div>
     </section>
   );
