@@ -44,8 +44,9 @@ export function About() {
                 </span>
               </li>
             ))}
-          </ul>
-        </Reveal>
+            </ul>
+          </Reveal>
+        </div>
       </div>
     </section>
   );
