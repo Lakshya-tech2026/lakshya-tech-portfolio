@@ -25,10 +25,9 @@ export function About() {
               </Reveal>
             ))}
           </div>
-        </div>
 
-        <Reveal delay={120}>
-          <ul className="panel space-y-1 p-5 sm:p-6">
+          <Reveal delay={120} className="mt-10">
+            <ul className="panel grid gap-1 p-5 sm:grid-cols-2 sm:p-6">
             {info.map(({ label, value, Icon }) => (
               <li
                 key={label}
