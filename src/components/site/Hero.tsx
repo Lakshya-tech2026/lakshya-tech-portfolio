@@ -23,11 +23,11 @@ export function Hero() {
           </p>
 
           <h1
-            className="mt-6 animate-fade-up text-4xl leading-[1.08] font-bold sm:text-5xl md:text-6xl"
+            className="mt-6 animate-fade-up text-[2.15rem] font-bold sm:text-5xl md:text-6xl"
             style={{ animationDelay: "140ms" }}
           >
-            {hero.headlineLead}
-            <span className="accent-text">{hero.headlineHighlight}</span>
+            <span className="block">{hero.headlineLead.trim()}</span>
+            <span className="accent-text block">{hero.headlineHighlight}</span>
           </h1>
 
           <p

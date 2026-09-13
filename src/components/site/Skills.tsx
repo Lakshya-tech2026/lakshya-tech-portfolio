@@ -62,14 +62,18 @@ export function Skills() {
                 {group.skills.map((skill, si) => {
                   const Icon = iconMap[skill.icon];
                   return (
-                    <Reveal as="li" key={skill.name} delay={si * 70 + gi * 20}>
-                      <article className="panel card-hover group h-full p-5">
-                        <span className="inline-flex h-11 w-11 items-center justify-center rounded-xl border border-border bg-background/60 text-primary transition-transform duration-300 group-hover:-translate-y-0.5">
-                          <Icon size={19} />
+                    <Reveal as="li" key={skill.name} delay={Math.min(si, 3) * 60}>
+                      <article className="panel card-hover group flex h-full flex-col p-5">
+                        <span className="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-border bg-background/60 text-primary transition-transform duration-300 group-hover:-translate-y-0.5">
+                          <Icon size={18} />
                         </span>
-                        <h4 className="mt-4 text-base font-semibold">{skill.name}</h4>
-                        <p className="mt-2 text-sm text-muted-foreground">{skill.description}</p>
-                        {skill.level ? <Badge className="mt-4 inline-block">{skill.level}</Badge> : null}
+                        <h4 className="mt-3.5 text-[0.95rem] font-semibold">{skill.name}</h4>
+                        <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">
+                          {skill.description}
+                        </p>
+                        <div className="mt-4 flex flex-1 items-end">
+                          {skill.level ? <Badge>{skill.level}</Badge> : null}
+                        </div>
                       </article>
                     </Reveal>
                   );

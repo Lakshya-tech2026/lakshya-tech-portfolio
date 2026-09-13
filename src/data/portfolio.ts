@@ -320,9 +320,9 @@ export const projects: Project[] = [
     },
   },
   {
-    id: "tech-club-website",
+    id: "pw-ioi-tech-club-website",
     number: "04",
-    name: "Tech Club Website",
+    name: "PW IOI Tech Club Website",
     category: "Web / Community",
     description:
       "A modern technology-club website concept focused on innovation, technical excellence, collaboration, and student community.",

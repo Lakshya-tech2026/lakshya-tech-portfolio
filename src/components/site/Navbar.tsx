@@ -19,7 +19,7 @@ export function Navbar() {
       className={cn(
         "fixed inset-x-0 top-0 z-50 animate-fade-up border-b transition-colors duration-300",
         scrolled
-          ? "border-border bg-background/80 backdrop-blur-xl"
+          ? "border-border bg-background/95 shadow-[0_1px_0_0_var(--color-border)] backdrop-blur-xl"
           : "border-transparent bg-transparent",
       )}
     >
