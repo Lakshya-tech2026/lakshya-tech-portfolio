@@ -1,6 +1,7 @@
 import { GraduationCap, Building2, Target, Activity } from "lucide-react";
 import { personal } from "@/data/portfolio";
 import { Reveal, SectionHeading } from "./primitives";
+import { ProfileCard } from "./ProfileCard";
 
 export function About() {
   const info = [
