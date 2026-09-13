@@ -71,11 +71,9 @@ export function Skills() {
                         <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">
                           {skill.description}
                         </p>
-                        {skill.level ? (
-                          <Badge className="mt-auto w-fit self-start pt-1.5">{skill.level}</Badge>
-                        ) : (
-                          <span className="mt-auto" />
-                        )}
+                        <div className="mt-4 flex flex-1 items-end">
+                          {skill.level ? <Badge>{skill.level}</Badge> : null}
+                        </div>
                       </article>
                     </Reveal>
                   );
