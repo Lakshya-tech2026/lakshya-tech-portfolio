@@ -7,6 +7,8 @@
  * ─────────────────────────────────────────────────────────────
  */
 
+import portraitAsset from "@/assets/lakshya-portrait.png.asset.json";
+
 export const personal = {
   brand: "Lakshya.Tech",
   name: "Lakshya Chandra",
@@ -41,7 +43,7 @@ export const personal = {
 // Recommended: a 4:5 portrait crop with you centered.
 export const profile = {
   /** Set to your imported image URL. Empty string shows a placeholder frame. */
-  photo: "",
+  photo: portraitAsset.url,
   photoAlt: "Portrait of Lakshya Chandra",
   name: "Lakshya Chandra",
   role: "Aspiring AI/ML Engineer",
