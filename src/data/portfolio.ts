@@ -8,6 +8,7 @@
  */
 
 import portraitAsset from "@/assets/lakshya-portrait.png.asset.json";
+import aboutPhotoAsset from "@/assets/lakshya-about.png.asset.json";
 
 export const personal = {
   brand: "Lakshya.Tech",
@@ -45,6 +46,8 @@ export const personal = {
 export const profile = {
   /** Set to your imported image URL. Empty string shows a placeholder frame. */
   photo: portraitAsset.url,
+  /** Photo shown in the About section profile card (falls back to `photo`). */
+  aboutPhoto: aboutPhotoAsset.url,
   photoAlt: "Portrait of Lakshya Chandra",
   name: "Lakshya Chandra",
   role: "Aspiring AI/ML Engineer",

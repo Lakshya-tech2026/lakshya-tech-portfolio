@@ -13,9 +13,9 @@ export function ProfileCard() {
         />
         <div className="overflow-hidden rounded-[22px] border border-primary/30 bg-surface/60 shadow-[0_24px_60px_-30px_rgba(56,189,248,0.45)]">
           <div className="aspect-[4/5] w-full overflow-hidden">
-            {profile.photo ? (
+            {(profile.aboutPhoto || profile.photo) ? (
               <img
-                src={profile.photo}
+                src={profile.aboutPhoto || profile.photo}
                 alt={profile.photoAlt}
                 loading="lazy"
                 className="h-full w-full object-cover object-center"
