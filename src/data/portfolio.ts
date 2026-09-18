@@ -21,13 +21,14 @@ export const personal = {
   focus: "AI / ML / Software Development",
   currentStatus: "Student & Builder",
   hero: {
-    eyebrow: "AI/ML • SOFTWARE • INNOVATION",
-    headlineLead: "Building Ideas Into ",
-    headlineHighlight: "Intelligent Solutions.",
+    eyebrow: "ASPIRING",
+    headlineLead: "AI/ML",
+    headlineHighlight: "Engineer",
     subtitle:
-      "B.Tech CSE (AI/ML) student passionate about Artificial Intelligence, Machine Learning, Generative AI, and building meaningful software.",
-    primaryCta: "Explore My Work",
+      "Building intelligent solutions with code, data, and a vision for a better tomorrow.",
+    primaryCta: "View My Work",
     secondaryCta: "Let's Connect",
+    strengths: ["Python", "Java", "Machine Learning"],
   },
   about: {
     heading: "Turning Curiosity Into Code.",
