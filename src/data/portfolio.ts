@@ -246,63 +246,8 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    id: "ai-ml-project",
-    number: "01",
-    name: "AI/ML Project",
-    category: "Artificial Intelligence / Machine Learning",
-    description:
-      "An AI/ML project focused on applying machine learning concepts to a practical problem.",
-    tags: ["Python", "Machine Learning", "Data"],
-    placeholder: true,
-    liveUrl: "#",
-    liveLabel: "View Project",
-    repoUrl: links.github,
-    repoLabel: "GitHub",
-    caseStudy: {
-      overview:
-        "Placeholder overview — describe what the project does and who it is for in two or three sentences.",
-      problem: "Placeholder — the specific problem this project set out to solve.",
-      approach:
-        "Placeholder — how the data was prepared, which model or method was chosen, and why.",
-      technology: ["Python", "scikit-learn / pandas", "Jupyter Notebook"],
-      keyFeatures: [
-        "Placeholder feature one",
-        "Placeholder feature two",
-        "Placeholder feature three",
-      ],
-      challenges: "Placeholder — the hardest part of building it and how it was handled.",
-      learned: "Placeholder — the concepts and habits this project taught you.",
-      future: ["Placeholder improvement one", "Placeholder improvement two"],
-    },
-  },
-  {
-    id: "generative-ai-experiment",
-    number: "02",
-    name: "Generative AI Experiment",
-    category: "Generative AI",
-    description:
-      "An experimental project exploring how generative AI can be used to create useful and interactive experiences.",
-    tags: ["Python", "Generative AI", "AI"],
-    placeholder: true,
-    liveUrl: "#",
-    liveLabel: "View Project",
-    repoUrl: links.github,
-    repoLabel: "GitHub",
-    caseStudy: {
-      overview:
-        "Placeholder overview — what the experiment explores and what makes the output interesting.",
-      problem: "Placeholder — the question or gap that made this experiment worth running.",
-      approach: "Placeholder — prompting strategy, model choice and evaluation method.",
-      technology: ["Python", "LLM API", "Prompt engineering"],
-      keyFeatures: ["Placeholder feature one", "Placeholder feature two"],
-      challenges: "Placeholder — reliability, cost or prompt-quality issues encountered.",
-      learned: "Placeholder — what working with generative models taught you.",
-      future: ["Placeholder improvement one", "Placeholder improvement two"],
-    },
-  },
-  {
     id: "personal-portfolio",
-    number: "03",
+    number: "01",
     name: "Personal Portfolio",
     category: "Web Development",
     description:
@@ -327,7 +272,7 @@ export const projects: Project[] = [
   },
   {
     id: "pw-ioi-tech-club-website",
-    number: "04",
+    number: "02",
     name: "PW IOI Tech Club Website",
     category: "Web / Community",
     description:
