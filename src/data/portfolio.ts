@@ -272,7 +272,7 @@ export const projects: Project[] = [
   },
   {
     id: "pw-ioi-tech-club-website",
-    number: "04",
+    number: "02",
     name: "PW IOI Tech Club Website",
     category: "Web / Community",
     description:
